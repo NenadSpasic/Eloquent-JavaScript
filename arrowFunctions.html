@@ -8,5 +8,46 @@
 </head>
 <body>
     
+
+    <script>
+        
+        // Arrow functions
+
+        //There’s a third notation for functions, which looks very different from 
+
+        //the others. Instead of the function keyword, it uses an arrow (=>) 
+
+        //made up of an equal sign and a greater-than character (not to be confused with the greater-than-or-equal operator, which is written >=)
+
+        const power = (base, exponent) => {
+            let result = 1;
+            for (let count =0; count < exponent; count++) {
+                result *= base;
+            }
+            return result;
+        };
+        
+        console.log (power (2,10));
+         //The arrow comes after the list of parameters and is followed by the 
+         //function’s body. It expresses something like 
+         //“this input (the parameters) produces this result (the body)”.
+
+        /*
+        The place where the computer stores this context is the call stack. 
+        Every time a function is called, the current context
+         stored on top of this stack. 
+         When a function returns, it removes the top context
+          from the stack and uses that context to continue
+           execution.
+        */
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
 </body>
 </html>
